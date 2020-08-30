@@ -118,8 +118,6 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"scripts/script.js":[function(require,module,exports) {
-// * * * * SET UP DOTENV
-// dotenv = require('dotenv').config();
 // * * * * SET UP JIM CARREY MOVIE LIST
 var jimCarreyFilms = ['3049', //Ace Ventura: Pet Detective
 '9273', //Ace Ventura: When Nature Calls

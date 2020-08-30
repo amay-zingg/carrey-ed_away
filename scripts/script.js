@@ -1,6 +1,3 @@
-// * * * * SET UP DOTENV
-// dotenv = require('dotenv').config();
-
 // * * * * SET UP JIM CARREY MOVIE LIST
 const jimCarreyFilms = [
 	'3049', //Ace Ventura: Pet Detective

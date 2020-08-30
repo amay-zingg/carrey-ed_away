@@ -1,6 +1,9 @@
 // * * * * JIM CARREY PERSON
 // https://api.themoviedb.org/3/person/206?api_key=08c738a8ee4d96edd5457b76330ce05c&language=en-US
 
+// * * * * SET UP DOTENV
+// dotenv = require('dotenv').config();
+
 const jimCarreyGifs = [
 	'https://media.giphy.com/media/nU704Y2jeFOHm/giphy.gif',
 	'https://media.giphy.com/media/y8fXirTJjj6E0/giphy.gif',
