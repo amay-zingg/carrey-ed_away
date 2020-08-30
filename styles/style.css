@@ -1,0 +1,153 @@
+/* * * * PAGE SETUP * * * */
+body {
+	background-color: #ebba6d;
+	background-image: url("data:image/svg+xml,%3Csvg width='70' height='70' viewBox='0 0 70 70' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f2dd9e' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 0h35v35H0V0zm5 5h25v25H5V5zm5 5h15v15H10V10zm5 5h5v5h-5v-5zM40 5h25v25H40V5zm5 5h15v15H45V10zm5 5h5v5h-5v-5zM70 35H35v35h35V35zm-5 5H40v25h25V40zm-5 5H45v15h15V45zm-5 5h-5v5h5v-5zM30 40H5v25h25V40zm-5 5H10v15h15V45zm-5 5h-5v5h5v-5z'/%3E%3C/g%3E%3C/svg%3E");
+	font-family: 'Do Hyeon', sans-serif;
+}
+
+.wrapper {
+	width: 100%;
+	/* NOT SURE I NEED THIS */
+}
+
+/* * * * BACKGROUND COLOURS
+color: #eec780;
+color: #ebba6d; 
+* * * */
+
+/* * * * HEADER/FOOTER * * * */
+header,
+footer {
+	background: #000;
+	height: 10vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header p,
+footer p {
+	color: #fff;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	padding: 15px;
+}
+
+header img {
+	width: 25%;
+}
+
+footer a {
+	text-decoration: none;
+	color: moccasin;
+}
+
+footer a:hover,
+footer a:active {
+	color: chocolate;
+}
+
+/* * * * MAIN * * * */
+main {
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+h1 {
+	font-size: 2rem;
+	text-align: center;
+}
+
+h1.main-title {
+	font-size: 5rem;
+	margin: 5px;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px moccasin;
+}
+
+.selected-films {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-flow: wrap;
+}
+
+.movie {
+	width: 50%;
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.movie img {
+	width: 100%;
+	border: 2px solid chocolate;
+	border-radius: 5px;
+	box-shadow: 1px 1px 5px chocolate;
+}
+
+.movie h2 {
+	font-size: 2.5rem;
+}
+
+.movie p.movie-overview,
+.movie span.release-date {
+	width: 100%;
+	display: block;
+	font-size: 1.6rem;
+}
+
+/* * * * RESPONSIVE - DESKTOP (DID MOBILE FIRST) * * * */
+@media (min-width: 700px) {
+	main {
+		max-width: 1050px;
+		margin: 0 auto;
+	}
+
+	.movie {
+		width: 30%;
+	}
+}
+
+/* * * * FORM (NOT ON PAGE RIGHT NOW) * * * */
+/* form {
+	width: 350px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+}
+
+form label {
+	padding: 0 15px;
+	font-size: 2rem;
+}
+
+input.search-box {
+	width: 250px;
+	padding: 15px 5px;
+	border-radius: 10px;
+}
+
+.search-button {
+	margin: 0 10px;
+	padding: 11px 8px 8px 8px;
+	font-size: 2.5rem;
+	background: #000;
+	border-radius: 15px;
+	border: 1px solid #000;
+}
+
+.search-button:hover,
+.search-button:active {
+	box-shadow: 1px 1px 5px chocolate;
+	background-color: moccasin;
+	border: 1px solid moccasin;
+} */
