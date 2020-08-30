@@ -1,5 +1,5 @@
 // * * * * SET UP DOTENV
-dotenv = require('dotenv').config();
+// dotenv = require('dotenv').config();
 
 // * * * * SET UP JIM CARREY MOVIE LIST
 const jimCarreyFilms = [
