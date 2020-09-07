@@ -1,0 +1,118 @@
+/* * * * PAGE SETUP * * * */
+body,
+button {
+	font-family: $bodyFont;
+}
+
+body,
+.winner-block {
+	background-color: $secondary;
+	background-image: url("data:image/svg+xml,%3Csvg width='70' height='70' viewBox='0 0 70 70' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f2dd9e' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 0h35v35H0V0zm5 5h25v25H5V5zm5 5h15v15H10V10zm5 5h5v5h-5v-5zM40 5h25v25H40V5zm5 5h15v15H45V10zm5 5h5v5h-5v-5zM70 35H35v35h35V35zm-5 5H40v25h25V40zm-5 5H45v15h15V45zm-5 5h-5v5h5v-5zM30 40H5v25h25V40zm-5 5H10v15h15V45zm-5 5h-5v5h5v-5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.wrapper {
+	width: 100%;
+	position: relative;
+	/* NOT SURE I NEED THIS */
+}
+
+/* * * * HEADER/FOOTER * * * */
+header,
+footer {
+	background: #000;
+	height: 10vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header p,
+footer p {
+	color: #fff;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	padding: 15px;
+}
+
+header img {
+	width: 25%;
+}
+
+footer a {
+	text-decoration: none;
+	color: $primary;
+}
+
+footer a:hover,
+footer a:active {
+	color: $accent;
+}
+
+/* * * * MAIN * * * */
+main {
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+h1 {
+	font-size: 2rem;
+	text-align: center;
+}
+
+h1.main-title {
+	font-size: 5rem;
+	margin: 5px;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px $primary;
+}
+
+/* * * * MOVIES BLOCK * * * */
+.selected-films {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-flow: wrap;
+}
+
+.movie {
+	width: 50%;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.movie img {
+	width: 100%;
+	border: 2px solid $accent;
+	border-radius: 5px;
+	box-shadow: 1px 1px 5px $accent;
+}
+
+h2.movie-title {
+	font-size: 2.5rem;
+	max-height: 90px;
+	margin: 20px 0 10px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.movie-overview {
+	margin: 10px 0;
+	// height: 75px;
+	// overflow: hidden;
+	// position: relative;
+	// transition: max-height 0.5s ease;
+}
+
+.chart {
+	width: 100%;
+	padding: 20px;
+}

@@ -1,23 +1,22 @@
 {
   "name": "movieratingproject",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "browsersList": [
-    "last 1 chrome versions"
-  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amay-zingg/carrey-ed_away.git"
+  },
   "author": "Anastasia <amayzinggdev@gmail.com>",
   "license": "ISC",
-  "keywords": [],
-  "description": "",
-  "dependencies": {
-    "dotenv": "^8.2.0",
-    "node-modules": "^1.0.1"
+  "bugs": {
+    "url": "https://github.com/amay-zingg/carrey-ed_away/issues"
   },
+  "homepage": "https://github.com/amay-zingg/carrey-ed_away#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "dotenv": "^8.2.0"
   }
 }

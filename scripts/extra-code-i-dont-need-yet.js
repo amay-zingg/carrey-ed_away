@@ -1,3 +1,13 @@
+// * * * * HTML FOR SEARCH
+//   <!-- SEARCH BUTTON -->
+//             <!-- <form>
+//                     <label for="name">Search:</label>
+//                     <input id="name" type="text" class="search-box" id="search-label" placeholder="What are you looking for?">
+                
+//                     <button type="submit" class="search-button" id="search" onclick="findMovies()">&#128064;</button>
+                    
+//                 </form> -->
+
 // * * * * JIM CARREY PERSON
 // https://api.themoviedb.org/3/person/206?api_key=08c738a8ee4d96edd5457b76330ce05c&language=en-US
 
@@ -208,5 +218,55 @@ function generateMoviesBlock(data) {
 	return movieSectionAndContent;
 }
 
+
 // * * * * INIT
 searchMovie(INITIAL_SEARCH_VALUE);
+
+// * * * * THIS IS CODE THAT ALSO WORKS TO APPEND TO DOM
+function addElement() {
+	jimCarreyFilms.forEach(function(film) {
+		let url = `${BASE_URL}movie/${film}?api_key=${API_KEY}&language=en-US`;
+
+		// * * * * DOM ELEMENTS
+		const movieCard = document.createElement('div');
+		// movieCard.setAttribute('class', 'movie'); //Both of these work
+		movieCard.className = ('class', 'movie');
+		let img = document.createElement('img');
+		img.className = 'movie-poster';
+		let h2 = document.createElement('h2');
+		h2.className = 'movie-title';
+		let span = document.createElement('span');
+		span.className = 'release-date';
+		let p = document.createElement('p');
+		p.className = 'movie-overview';
+		let button = document.createElement('button');
+		button.className = 'choice';
+
+		// * * * * RETRIEVING FROM API
+		fetch(url)
+			.then((response) => {
+				return response.json();
+			})
+			.then((data) => {
+				img.src = `${IMAGE_URL}${data.poster_path}`;
+				img.alt = `${data.original_title} Movie Poster`;
+				h2.textContent = data.original_title;
+				span.textContent = `Release Date: ${data.release_date}`;
+				p.textContent = data.overview;
+				button.textContent = 'Your Winner!';
+				button.id = `${film}`;
+
+				movieCard.appendChild(img);
+				movieCard.appendChild(h2);
+				movieCard.appendChild(span);
+				movieCard.appendChild(p);
+				movieCard.appendChild(button);
+
+				const moviesContainer = document.querySelector('#selected-films');
+				moviesContainer.appendChild(movieCard);
+			})
+			.catch(function(err) {
+				alert(err);
+			});
+	});
+}

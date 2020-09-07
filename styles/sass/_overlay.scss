@@ -1,0 +1,69 @@
+/* * * * OVERLAY * * * */
+.overlay {
+	height: 100vh;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	z-index: 0;
+	opacity: 0;
+	transform: scale(0);
+	transition: opacity 0.25s, transform 0.25s;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.open {
+	background: rgba(44, 44, 44, 0.5);
+	z-index: 10;
+	opacity: 1;
+	transform: scale(1.1);
+	transition: opacity 0.25s 0s, transform 0.25s;
+}
+
+.close-button {
+	top: 15px;
+	right: 15px;
+	z-index: 10;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	position: absolute;
+}
+
+.winner-block {
+	width: 600px;
+	padding: 50px;
+	border-radius: 15px;
+	border: 2px solid chocolate;
+	box-shadow: 1px 1px 5px chocolate;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+.winner-block a {
+	font-size: 3rem;
+	margin-top: 50px;
+	text-decoration: none;
+	color: #000;
+	text-shadow: 1px 1px 1px chocolate;
+}
+
+.winner-block a:hover,
+.winner-block a:active {
+	color: chocolate;
+	text-shadow: 1px 1px 1px #000;
+}
+
+p.winner-title {
+	font-size: 5rem;
+	margin: 15px;
+	text-shadow: 1px 1px 1px moccasin;
+}
